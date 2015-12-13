@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var audio = new Audio('audio/picardsong.mp3');
 
 	// Cache the Window object
 	$window = $(window);
@@ -39,5 +40,11 @@ $(document).ready(function(){
 		});
 
 	}
+
+	var easter_egg = new Konami(function() { 
+		$('img.doge').toggleClass('active');
+		$('body').toggleClass('doge');
+		audio.play();
+	});
 
 });
