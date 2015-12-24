@@ -32,14 +32,14 @@ body > section {
 	clear: both;
 }
 
-.header {
+header {
 	background: url(../img/herengracht.jpg);
 	background-size: cover;
 	background-position: top left;
 	padding: 6em 0;
 }
 
-.header h1 {
+header h1 {
 	width: 90%;
 	max-width: 600px;
 	margin: 0 auto;
@@ -52,7 +52,7 @@ body > section {
 	text-transform: uppercase;
 }
 
-.header h2 {
+header h2 {
 	width: 90%;
 	max-width: 300px;
 	margin: 0 auto;
@@ -63,7 +63,7 @@ body > section {
 	text-transform: uppercase;
 }
 
-.header img {
+header img {
 	display: block;
 	width: 60%;
 	margin: 0 auto;
@@ -71,10 +71,6 @@ body > section {
 }
 
 /*Parallax Scrollz*/
-
-section.scroll:(not(.header)) {
-  padding: 4em;
-}
 
 section.scroll h1 {
   font-size: 2em;
