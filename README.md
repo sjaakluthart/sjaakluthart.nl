@@ -11,15 +11,12 @@ git clone git@github.com:sjaakluthart/portfolio.git
 Requirements:
 * [Sass](http://sass-lang.com/)
 * [Bourbon](http://bourbon.io/)
-* [Compass](http://compass-style.org/)
 
 After installing the listed requirements you can start developing! :)
 
-I use [Compass](http://compass-style.org/) to process my Sass, you can use any processor you like.
-
 To watch for Sass changes run:
 ```
-compass watch <path to assets>
+sass --watch style.scss:../stylesheets/style.css
 ```
 
 ## Code Styling and Linting
