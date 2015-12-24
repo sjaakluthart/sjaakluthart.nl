@@ -1,0 +1,5 @@
+@import 'bourbon/bourbon';
+
+@include font-face ('Source Code Pro', '/fonts/SourceCodePro-ExtraLight.ttf', 'lighter');
+@include font-face ('Source Code Pro', '/fonts/SourceCodePro-Light.ttf', 'normal');
+@include font-face ('Source Code Pro', '/fonts/SourceCodePro-Semibold.ttf', 'bold');
