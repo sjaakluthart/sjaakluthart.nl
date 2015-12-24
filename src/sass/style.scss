@@ -1,5 +1,8 @@
-@import 'compass/reset';
 @import 'bourbon/bourbon';
 @import 'fonts';
 @import 'variables';
+@import 'mixins';
 @import 'global';
+
+@import 'scroll';
+@import 'header';
