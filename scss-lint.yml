@@ -149,6 +149,10 @@ linters:
       - padding-right
       -
       - border
+      - border-top
+      - border-right
+      - border-bottom
+      - border-left
       - border-radius
       -
       - overflow
