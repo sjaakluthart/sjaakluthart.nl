@@ -1,0 +1,69 @@
+header,
+.page-header {
+
+    h1,
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: $light;
+        color: $white;
+
+        text-shadow: transparentize($black, .5) 1px 1px, transparentize($black, .5) 2px 2px;
+    }
+
+}
+
+header {
+    padding: 8rem 0;
+
+    background: url('../img/header.jpg') center center;
+    background-size: cover;
+
+    h1 {
+        @include slideInLeft();
+        width: 90%;
+        max-width: 60rem;
+
+        margin: 0 auto;
+
+        padding: 0 0 1.75rem 0;
+
+        border-bottom: 2px solid;
+
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        @extend h1;
+        @include slideInRight();
+
+        padding: 1.25rem 0 0 0;
+
+        margin: 0 auto 1.75rem;
+
+        border-bottom: 0;
+
+        font-size: 2.5rem;
+    }
+
+    img {
+        @include flipInY($duration: 1.5s);
+        display: block;
+
+        width: 25%;
+        min-width: 20rem;
+
+        margin: 0 auto;
+    }
+}
+
+.page-header {
+    padding: 4rem 0;
+
+    background: url('../img/code.png') center center;
+    background-size: 100%;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}

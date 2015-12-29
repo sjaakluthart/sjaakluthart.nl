@@ -1,6 +1,9 @@
 html {
     @include font-smoothing;
+    @include fadeIn($duration: 1.5s);
     font-family: Source Code Pro;
     font-size: $base;
-    font-weight: normal;
+    font-weight: $normal;
+
+    background: $white;
 }
