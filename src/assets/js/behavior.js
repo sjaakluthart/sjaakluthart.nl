@@ -5,7 +5,7 @@ $(document).ready(function(){
         html,
         parallax;
 
-	audio = new Audio('audio/picardsong.mp3');
+	audio = new Audio('assets/audio/picardsong.mp3');
     html = $('html');
 	$window = $(window);
 
