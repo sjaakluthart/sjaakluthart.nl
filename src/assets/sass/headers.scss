@@ -1,18 +1,3 @@
-header,
-.page-header {
-
-    h1,
-    h2 {
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: $light;
-        color: $white;
-
-        text-shadow: transparentize($black, .5) 1px 1px, transparentize($black, .5) 2px 2px;
-    }
-
-}
-
 header {
     padding: 8rem 0;
 
@@ -20,7 +5,7 @@ header {
     background-size: cover;
 
     h1 {
-        @include slideInLeft();
+        @include bounceInLeft($function: ease-in-out);
         width: 90%;
         max-width: 60rem;
 
@@ -31,11 +16,17 @@ header {
         border-bottom: 2px solid;
 
         font-size: 3.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: $light;
+        color: $white;
+
+        text-shadow: transparentize($black, .5) 1px 1px, transparentize($black, .5) 2px 2px;
     }
 
     h2 {
         @extend h1;
-        @include slideInRight();
+        @include bounceInRight($delay: .5s, $function: ease-in-out);
 
         padding: 1.25rem 0 0 0;
 
@@ -47,23 +38,12 @@ header {
     }
 
     img {
-        @include flipInY($duration: 1.5s);
+        @include bounceInDown($delay: 1s, $function: ease-in-out);
         display: block;
 
         width: 25%;
         min-width: 20rem;
 
         margin: 0 auto;
-    }
-}
-
-.page-header {
-    padding: 4rem 0;
-
-    background: url('../img/code.png') center center;
-    background-size: 100%;
-
-    h1 {
-        font-size: 2.5rem;
     }
 }
