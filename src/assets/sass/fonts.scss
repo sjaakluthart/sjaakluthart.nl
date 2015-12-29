@@ -1,3 +1,17 @@
-@include font-face ('Source Code Pro', '/fonts/SourceCodePro-ExtraLight.ttf', 'lighter');
-@include font-face ('Source Code Pro', '/fonts/SourceCodePro-Light.ttf', 'normal');
-@include font-face ('Source Code Pro', '/fonts/SourceCodePro-Semibold.ttf', 'bold');
+@font-face {
+    font-family: Source Code Pro;
+    font-weight: lighter;
+    src: url('../fonts/SourceCodePro-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    font-weight: normal;
+    src: url('../fonts/SourceCodePro-Light.ttf');
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    font-weight: bold;
+    src: url('../fonts/SourceCodePro-Semibold.ttf');
+}
