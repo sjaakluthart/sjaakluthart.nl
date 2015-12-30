@@ -11,14 +11,14 @@ header {
 
         margin: 0 auto;
 
-        padding: 0 0 1.75rem 0;
+        padding: 0 0 1.75rem;
 
         border-bottom: 2px solid;
 
         font-size: 3.5rem;
-        text-transform: uppercase;
-        text-align: center;
         font-weight: $light;
+        text-align: center;
+        text-transform: uppercase;
         color: $white;
 
         text-shadow: transparentize($black, .5) 1px 1px, transparentize($black, .5) 2px 2px;
@@ -28,9 +28,9 @@ header {
         @extend h1;
         @include bounceInRight($delay: .5s, $function: ease-in-out);
 
-        padding: 1.25rem 0 0 0;
-
         margin: 0 auto 1.75rem;
+
+        padding: 1.25rem 0 0;
 
         border-bottom: 0;
 

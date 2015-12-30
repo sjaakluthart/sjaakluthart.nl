@@ -1,11 +1,12 @@
 html {
     @include font-smoothing;
     @include fadeIn($duration: 1.5s, $function: ease-in-out);
+
+    background: $white;
+
     font-family: Source Code Pro, sans-serif;
     font-size: $base;
     font-weight: $normal;
-
-    background: $white;
 }
 
 body > section {
@@ -17,177 +18,8 @@ body > section {
         margin-bottom: 1.25rem;
 
         font-size: 2.5rem;
-        text-transform: uppercase;
-        text-align: center;
         font-weight: $light;
-    }
-}
-
-.portfolio figure {
-    width: 95%;
-
-    position: relative;
-
-    margin: 2.5%;
-
-    float: left;
-
-    background: darken($blue, 20%);
-
-    overflow: hidden;
-
-    &:hover {
-        div {
-            @include transform(scaleY(1));
-            top: 0;
-        }
-
-        h1 {
-            border-color: $white;
-        }
-    }
-
-    img {
-        display: block;
-
-        width: 100%;
-
-        opacity: .7;
-    }
-
-    > h1 {
-        @include transition(border-color .7s ease-in-out);
-        width: 100%;
-        height: 3.8rem;
-
-        position: absolute;
-        top: 0;
-
-        margin-bottom: 0;
-
-        border-bottom: 2px solid transparent;
-
-        font-size: 1.6rem;
-        line-height: 3.8rem;
-        font-weight: $bold;
-        color: $white;
-
-        text-shadow: transparentize($black, .5) 1px 1px, transparentize($black, .5) 2px 2px;
-
-        z-index: 1;
-    }
-
-    div {
-        @include transition(top .7s $ease-in-out-back, transform .5s ease-in-out);
-        @include transform(scaleY(0));
-        @include calc(width, '100% - 3rem');
-        @include calc(height, '100% - 3rem');
-        background: transparentize($black, .3);
-
-        padding: 1.5rem;
-
-        position: absolute;
-        top: 100%;
-
-        font-size: 1.2rem;
-        color: $white;
-
-        h1 {
-            margin-top: 3.5rem;
-
-            font-size: 1.2rem;
-            line-height: 2.9rem;
-            font-weight: $normal;
-            color: $white;
-        }
-
-        span {
-            padding: .5rem;
-            background: $blue;
-
-            margin: 0 .5rem;
-
-            border-radius: 3px;
-
-            &.html {
-                background: $html;
-            }
-
-            &.css {
-                background: $css;
-            }
-
-            &.angular {
-                background: $angular;
-            }
-
-            &.js {
-                background: $js;
-            }
-        }
-
-        section {
-            position: absolute;
-            bottom: 1.5rem;
-            left: 1.5rem;
-
-            &.links {
-                left: auto;
-                right: 1.5rem;
-            }
-        }
-
-        a {
-            display: inline-block;
-
-            width: 3rem;
-            height: 3rem;
-
-            background: url('../img/link.png');
-            background-size: cover;
-
-            &.git {
-                background: url('../img/git.png');
-                background-size: cover;
-            }
-
-            &:hover {
-                @include tada();
-
-                &.git {
-                    @include rubberBand();
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .portfolio figure {
-        width: 45%;
-
-        > h1 {
-            height: 4.8rem;
-
-            line-height: 4.8rem;
-        }
-
-        div {
-            font-size: 1.3rem;
-
-            h1 {
-                margin-top: 4.5rem;
-
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 960px) {
-    .portfolio figure {
-        width: 30%;
-
-        margin: 1.66%;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
