@@ -47,3 +47,15 @@ header {
         margin: 0 auto;
     }
 }
+
+body > section {
+    > h1 {
+        width: 60%;
+
+        margin: 0 auto;
+
+        padding-bottom: 1.25rem;
+
+        border-bottom: 2px solid $blue;
+    }
+}
