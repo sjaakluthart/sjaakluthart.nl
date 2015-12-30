@@ -1,7 +1,7 @@
 html {
     @include font-smoothing;
     @include fadeIn($duration: 1.5s, $function: ease-in-out);
-    font-family: Source Code Pro;
+    font-family: Source Code Pro, sans-serif;
     font-size: $base;
     font-weight: $normal;
 
