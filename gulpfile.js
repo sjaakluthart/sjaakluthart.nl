@@ -7,6 +7,9 @@ var gulp = require('gulp'),
     stylish = require('gulp-jscs-stylish'),
     scsslint = require('gulp-scss-lint'),
     tar = require('gulp-tar'),
+    gutil = require('gulp-util'),
+    ftp = require('gulp-ftp'),
+    settings = require('./settings.json'),
     sources;
 
 sources = [
@@ -52,11 +55,26 @@ gulp.task('watch', function() {
 });
 
 gulp.task('compress', ['sass'], function() {
-    gulp.src([
+    return gulp.src([
             'src/**/*',
             '!src/assets/sass/',
             '!src/assets/sass/**/*'
         ])
         .pipe(tar('archive.zip'))
         .pipe(gulp.dest('build'));
+});
+
+gulp.task('deploy', ['sass'], function() {
+    return gulp.src([
+        'src/**/*',
+        '!src/assets/sass/',
+        '!src/assets/sass/**/*'
+    ])
+    .pipe(ftp({
+        host: settings.host,
+        user: settings.user,
+        pass: settings.pass,
+        remotePath: settings.remotePath
+    }))
+    .pipe(gutil.noop());
 });
