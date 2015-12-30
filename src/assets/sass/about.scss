@@ -1,0 +1,14 @@
+.about {
+
+    > h1 {
+        border-bottom: 2px solid $red;
+    }
+
+    section {
+        width: 45%;
+
+        margin: 2.5%;
+
+        float: left;
+    }
+}
