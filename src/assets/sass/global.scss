@@ -31,7 +31,7 @@ body > section {
 
         float: left;
 
-        background: $blue;
+        background: darken($blue, 20%);
 
         overflow: hidden;
 
@@ -70,6 +70,8 @@ body > section {
             line-height: 4.8rem;
             font-weight: $bold;
             color: $white;
+
+            text-shadow: transparentize($black, .5) 1px 1px, transparentize($black, .5) 2px 2px;
 
             z-index: 1;
         }
