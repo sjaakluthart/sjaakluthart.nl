@@ -7,6 +7,12 @@ html {
     font-family: Source Code Pro, sans-serif;
     font-size: $base;
     font-weight: $normal;
+
+    overflow-x: hidden;
+}
+
+body {
+    background: $white;
 }
 
 body > section {
@@ -21,5 +27,57 @@ body > section {
         font-weight: $light;
         text-align: center;
         text-transform: uppercase;
+    }
+}
+
+.elevator-button {
+    width: 10rem;
+
+    margin: 0 auto 1rem;
+
+    cursor: pointer;
+
+    img {
+        display: block;
+
+        width: 3rem;
+
+        margin: 0 auto 1rem;
+    }
+}
+
+footer {
+    padding: 1rem;
+
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.konami {
+    width: 2rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.doge {
+    @include transition(opacity 1s ease-in-out);
+    width: 100%;
+    max-height: 100vh;
+
+    position: fixed;
+    top: 0;
+    
+    background: url('../img/doge.jpg');
+
+    opacity: 0;
+
+    z-index: -3;
+
+    &.active {
+        opacity: 1;
+
+        z-index: 2;
     }
 }

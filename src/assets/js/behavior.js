@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-    var audio,
-        html;
+    var html;
 
     html = $('html');
   
@@ -19,8 +18,7 @@ $(document).ready(function(){
 	}
 
 	new Konami(function() {
-		$('img.doge').toggleClass('active');
-		$('body').toggleClass('doge');
+		$('.doge').toggleClass('active');
 	});
 
 });
