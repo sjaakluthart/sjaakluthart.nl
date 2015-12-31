@@ -3,7 +3,6 @@ $(document).ready(function(){
     var audio,
         html;
 
-	audio = new Audio('assets/audio/picardsong.mp3');
     html = $('html');
   
   	// enable hover styles for touch
@@ -22,7 +21,6 @@ $(document).ready(function(){
 	new Konami(function() {
 		$('img.doge').toggleClass('active');
 		$('body').toggleClass('doge');
-		audio.play();
 	});
 
 });
