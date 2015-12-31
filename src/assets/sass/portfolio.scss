@@ -44,7 +44,7 @@
 
         border-bottom: 2px solid transparent;
 
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: $bold;
         line-height: 3.8rem;
         color: $white;
@@ -126,7 +126,7 @@
         background-size: cover;
 
         &.git {
-            background: url('../img/git.png');
+            background: url('../img/git-white.svg');
             background-size: cover;
         }
 
@@ -140,7 +140,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 650px) {
     .portfolio figure {
         width: 45%;
 
@@ -164,7 +164,7 @@
 
 @media screen and (min-width: 960px) {
     .portfolio figure {
-        width: 30%;
+        width: 29.5%;
 
         margin: 1.66%;
     }
