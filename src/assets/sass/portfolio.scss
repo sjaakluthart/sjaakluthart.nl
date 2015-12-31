@@ -59,12 +59,11 @@
         @include transform(scaleY(0));
         @include calc(width, '100% - 3rem');
         @include calc(height, '100% - 3rem');
+        @include linear-gradient(top, transparentize($black, .6), transparentize($black, .2));
         position: absolute;
         top: 100%;
 
         padding: 1.5rem;
-
-        background: -webkit-linear-gradient(top, transparentize($black, .6), transparentize($black, .2));
 
         font-size: 1.2rem;
         color: $white;
