@@ -58,7 +58,8 @@ gulp.task('compress', ['sass'], function() {
     return gulp.src([
             'src/**/*',
             '!src/assets/sass/',
-            '!src/assets/sass/**/*'
+            '!src/assets/sass/**/*',
+            '!src/assets/stylesheets/style.css.map'
         ])
         .pipe(tar('archive.zip'))
         .pipe(gulp.dest('build'));
@@ -66,15 +67,16 @@ gulp.task('compress', ['sass'], function() {
 
 gulp.task('deploy', ['sass'], function() {
     return gulp.src([
-        'src/**/*',
-        '!src/assets/sass/',
-        '!src/assets/sass/**/*'
-    ])
-    .pipe(ftp({
-        host: settings.host,
-        user: settings.user,
-        pass: settings.pass,
-        remotePath: settings.remotePath
-    }))
-    .pipe(gutil.noop());
+            'src/**/*',
+            '!src/assets/sass/',
+            '!src/assets/sass/**/*',
+            '!src/assets/stylesheets/style.css.map'
+        ])
+        .pipe(ftp({
+            host: settings.host,
+            user: settings.user,
+            pass: settings.pass,
+            remotePath: settings.remotePath
+        }))
+        .pipe(gutil.noop());
 });
