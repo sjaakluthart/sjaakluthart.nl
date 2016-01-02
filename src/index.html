@@ -7,9 +7,7 @@
         <title>Sjaak Luthart</title>
         <link rel="stylesheet" href="assets/stylesheets/style.css">
         <script src="assets/js/elevator.min.js"></script>
-        <script src="assets/js/jquery-1.11.3.min.js"></script>
         <script src="assets/js/konami.min.js"></script>
-        <script src="assets/js/behavior.js"></script>
     </head>
     <body>
     	<header>
@@ -242,6 +240,8 @@
 			Sjaak Luthart &copy; <script>document.write(new Date().getFullYear())</script>
 		</footer>
 
+        <img class="konami" src="assets/img/konami.png" alt="">
+        <img class="doge" src="assets/img/doge.svg" alt="very website, much design">
 		<script>
 			//            ELEVATE!
 			//              /
@@ -257,15 +257,19 @@
 			//     C__O__O__O__D
 			//    [_____________]
 			window.onload = function() {
-			  var elevator = new Elevator({
-			    element: document.querySelector('.elevator-button'),
-			    endAudio: 'assets/audio/ding.mp3',
-			    duration: 1500
-			  });
+                var elevator = new Elevator({
+                    element: document.querySelector('.elevator-button'),
+                    endAudio: 'assets/audio/ding.mp3',
+                    duration: 1500
+                });
+
+                new Konami(function() {
+                    var doge = document.getElementsByClassName('doge');
+                    console.log(doge);
+                    doge[0].classList.toggle('active');
+                });
 			}
 
 		</script>
-        <img class="konami" src="assets/img/konami.png" alt="">
-        <img class="doge" src="assets/img/doge.svg" alt="very website, much design">
     </body>
 </html>
