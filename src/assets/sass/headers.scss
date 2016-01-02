@@ -1,0 +1,61 @@
+header {
+    padding: 8rem 0;
+
+    background: url('../img/header.jpg') center center;
+    background-size: cover;
+
+    h1 {
+        @include bounceInLeft($function: ease-in-out);
+        width: 90%;
+        max-width: 60rem;
+
+        margin: 0 auto;
+
+        padding: 0 0 1.75rem;
+
+        border-bottom: 2px solid;
+
+        font-size: 3.5rem;
+        font-weight: $light;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+
+        text-shadow: transparentize($black, .5) 1px 1px, transparentize($black, .5) 2px 2px;
+    }
+
+    h2 {
+        @extend h1;
+        @include bounceInRight($delay: .5s, $function: ease-in-out);
+
+        margin: 0 auto 1.75rem;
+
+        padding: 1.25rem 0 0;
+
+        border-bottom: 0;
+
+        font-size: 2.5rem;
+    }
+
+    img {
+        @include bounceInDown($delay: 1s, $function: ease-in-out);
+        display: block;
+
+        width: 25%;
+        min-width: 20rem;
+
+        margin: 0 auto;
+    }
+}
+
+body > section {
+    > h1 {
+        width: 60%;
+
+        margin: 0 auto;
+
+        padding-bottom: 1.25rem;
+
+        border-bottom: 2px solid $blue;
+    }
+}

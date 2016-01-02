@@ -1,0 +1,27 @@
+{
+  "name": "sjaakluthart.nl",
+  "version": "0.0.1",
+  "license": "CC-BY-NC-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sjaakluthart/portfolio.git"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jscs-stylish": "^1.2.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-scss-lint": "^0.3.8",
+    "jscs": "^2.6.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "gulp-tar": "^1.8.0",
+    "gulp-util": "^3.0.7",
+    "gulp-ftp": "^1.1.0"
+  }
+}
