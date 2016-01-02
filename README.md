@@ -59,6 +59,12 @@ gulp compress
 ```
 This will compile all Sass files and create an archive.gz file in the build directory.
 
+To deploy the website run:
+```
+gulp deploy
+```
+This will compile all Sass files and deploy the website using gulp-ftp.
+
 ### License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons-Licentie" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
