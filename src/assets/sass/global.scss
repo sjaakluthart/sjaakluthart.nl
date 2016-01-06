@@ -2,31 +2,31 @@ html {
     @include font-smoothing;
     @include fadeIn($duration: 1.5s, $function: ease-in-out);
 
+    overflow-x: hidden;
+
     background: $white;
 
     font-family: Source Code Pro, sans-serif;
     font-size: $base;
     font-weight: $normal;
-
-    overflow-x: hidden;
 }
 
 body {
     background: $white;
-}
 
-body > section {
-    padding: 2.5rem;
+    > section {
+        padding: 2.5rem;
 
-    overflow: auto;
+        overflow: auto;
 
-    h1 {
-        margin-bottom: 1.25rem;
+        h1 {
+            margin-bottom: 1.25rem;
 
-        font-size: 2.5rem;
-        font-weight: $light;
-        text-align: center;
-        text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: $light;
+            text-align: center;
+            text-transform: uppercase;
+        }
     }
 }
 
