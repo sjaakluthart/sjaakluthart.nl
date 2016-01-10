@@ -1,10 +1,5 @@
 //.jshintrc
 {
-  // JSHint Meteor Configuration File
-  // Match the Meteor Style Guide
-  //
-  // See http://jshint.com/docs/ for more details
-
   "maxerr"        : 50,       // {int} Maximum error before stopping
 
   // Enforcing
