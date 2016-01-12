@@ -13,6 +13,8 @@ Requirements:
 * [NPM](https://www.npmjs.com/)
 * [Gulp](http://gulpjs.com/)
 * [Sass](http://sass-lang.com/)
+* [SCSS Lint](https://github.com/brigade/scss-lint)
+* [SCSS Lint reporter checkstyle](https://github.com/Sweetchuck/scss_lint_reporter_checkstyle)
 * [Bourbon](http://bourbon.io/)
 
 Install the node modules
