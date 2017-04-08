@@ -2,10 +2,11 @@
 /* global document */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/app';
 import './css/meyer-reset.css';
 import './css/index.css';
 
 ReactDOM.render(
-  <p>hi</p>,
+  <App />,
   document.getElementById('root')
 );
