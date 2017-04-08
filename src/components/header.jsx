@@ -31,7 +31,7 @@ export default () => {
         <Button onClick={() => window.open('https://github.com/sjaakluthart', '_blank')} iconButton>
           <img style={{ width: '24px' }} src={github} alt="github" />
         </Button>
-        <Button iconButton>
+        <Button onClick={() => window.open('mailto:mail@sjaakluthart.nl')} iconButton>
           <IconRocket color="#FEFEFE" />
         </Button>
         <Button onClick={() => window.open('https://www.instagram.com/sjaakluthart/', '_blank')} iconButton>
