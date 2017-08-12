@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Titillium';
+  src: url('../assets/fonts/TitilliumWeb-Light.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Titillium, sans-serif;
+  background: #FEFEFE;
+  color: #202020;
+  font-weight: 400;
+}
+
+html,
+body,
+#root,
+main {
+  height: 100%;
+}
+
+main > header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(225deg, #D24E53 0%, #5999B4 75%);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FEFEFE;
+  box-sizing: border-box;
+}
+
+.buttons {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.buttons img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.links {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+.links a:hover {
+  box-shadow: rgba(21, 21, 21, 0.12) 0px 1px 6px, rgba(21, 21, 21, 0.12) 0px 1px 4px;
+  background: rgba(21,21,21, 0.1);
+  transform: translateY(-1px);
+}
+
+.links a img {
+  width: 100%;
+  height: 100%;
+}
+
+main > header h1 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+main > header h2 {
+  font-size: 18px;
+}
+
+.sjaak {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
