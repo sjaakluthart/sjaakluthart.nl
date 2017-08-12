@@ -11,6 +11,6 @@
   "dependencies": {},
   "scripts": {
     "postcss": "postcss src/css/*.css -d build/css -u autoprefixer postcss-clean --no-map",
-    "deploy": "buildbranch gh-pages build"
+    "deploy": "buildbranch gh-pages build sjaakluthart.nl"
   }
 }
