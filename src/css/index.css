@@ -1,15 +1,10 @@
-@font-face {
-  font-family: 'Titillium';
-  src: url('../assets/fonts/TitilliumWeb-Light.ttf');
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Livvic:300&display=swap');
 
 body {
-  font-family: Titillium, sans-serif;
+  font-family: 'Gayathri', sans-serif;
   background: #FEFEFE;
   color: #202020;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 html,
