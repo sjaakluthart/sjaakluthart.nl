@@ -8,9 +8,7 @@ clean:
 
 build: clean
 	mkdir $(BUILD_DIR)
-	cp -R src/assets build
-	npm run postcss
-	cp src/index.html $(BUILD_DIR)
+	bash scripts/build.sh
 
 deploy: build
 	npm run deploy
