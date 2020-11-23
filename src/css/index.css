@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Livvic:300&display=swap');
-
 body {
-  font-family: 'Gayathri', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;;
   background: #FEFEFE;
-  color: #202020;
+  color: #2e2e2e;
   font-weight: 300;
 }
 
@@ -22,28 +24,14 @@ main > header {
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background: linear-gradient(225deg, #D24E53 0%, #5999B4 75%);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  color: #FEFEFE;
   box-sizing: border-box;
 }
 
-.buttons {
-  width: 240px;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-.buttons img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-
 .links {
+  margin-top: 20px;
   width: 120px;
   display: flex;
   justify-content: space-between;
@@ -72,6 +60,7 @@ main > header {
 main > header h1 {
   font-size: 32px;
   margin: 20px 0;
+  font-weight: 500;
 }
 
 main > header h2 {
@@ -79,7 +68,7 @@ main > header h2 {
 }
 
 .sjaak {
-  width: 128px;
-  height: 128px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
