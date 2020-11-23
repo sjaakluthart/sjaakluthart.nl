@@ -43,13 +43,6 @@ main > header {
   display: block;
   padding: 8px;
   border-radius: 50%;
-  transition: all .3s ease-in-out;
-}
-
-.links a:hover {
-  box-shadow: rgba(21, 21, 21, 0.12) 0px 1px 6px, rgba(21, 21, 21, 0.12) 0px 1px 4px;
-  background: rgba(21,21,21, 0.1);
-  transform: translateY(-1px);
 }
 
 .links a img {
